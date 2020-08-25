@@ -526,7 +526,7 @@ StatusText.TextYAlignment = Enum.TextYAlignment.Top
 
 -- Scripts:
 
-local function QTQOZV_fake_script() -- Minimize.LocalScript 
+local function PDUC_fake_script() -- Minimize.LocalScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	local on = false
@@ -544,8 +544,8 @@ local function QTQOZV_fake_script() -- Minimize.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QTQOZV_fake_script)()
-local function JBBOH_fake_script() -- Minimize.Hover 
+coroutine.wrap(PDUC_fake_script)()
+local function CTOEYH_fake_script() -- Minimize.Hover 
 	local script = Instance.new('LocalScript', Minimize)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -555,8 +555,8 @@ local function JBBOH_fake_script() -- Minimize.Hover
 		script.Parent.Yellow:TweenSize(UDim2.new(0,0),"In","Elastic",false,nil)
 	end)
 end
-coroutine.wrap(JBBOH_fake_script)()
-local function UTUF_fake_script() -- Exit.Hover 
+coroutine.wrap(CTOEYH_fake_script)()
+local function HIZT_fake_script() -- Exit.Hover 
 	local script = Instance.new('LocalScript', Exit)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -566,8 +566,8 @@ local function UTUF_fake_script() -- Exit.Hover
 		script.Parent.Red:TweenSize(UDim2.new(0,0),"In","Elastic",false,nil)
 	end)
 end
-coroutine.wrap(UTUF_fake_script)()
-local function LRPA_fake_script() -- Exit.LocalScript 
+coroutine.wrap(HIZT_fake_script)()
+local function BSAPD_fake_script() -- Exit.LocalScript 
 	local script = Instance.new('LocalScript', Exit)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -575,8 +575,8 @@ local function LRPA_fake_script() -- Exit.LocalScript
 		script.Parent.Parent.Parent.Parent.Main:TweenSize(UDim2.new(0,0,0,0),"In","Linear",0.3,false,nil)
 	end)
 end
-coroutine.wrap(LRPA_fake_script)()
-local function YIQXRH_fake_script() -- exeframe.LocalScript 
+coroutine.wrap(BSAPD_fake_script)()
+local function GSMHA_fake_script() -- exeframe.LocalScript 
 	local script = Instance.new('LocalScript', exeframe)
 
 	local lua_keywords = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
@@ -757,8 +757,8 @@ local function YIQXRH_fake_script() -- exeframe.LocalScript
 	
 	Source.Changed:Connect(highlight_source)
 end
-coroutine.wrap(YIQXRH_fake_script)()
-local function DBQF_fake_script() -- Execute.ExecuteScript 
+coroutine.wrap(GSMHA_fake_script)()
+local function MJFRZFX_fake_script() -- Execute.ExecuteScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -770,22 +770,16 @@ local function DBQF_fake_script() -- Execute.ExecuteScript
 		end
 	end)
 end
-coroutine.wrap(DBQF_fake_script)()
-local function PIYL_fake_script() -- Execute.Disablescript 
-	local script = Instance.new('LocalScript', Execute)
-
-	script.Parent.Parent.Execute.ExecuteScript.Disabled = true
-end
-coroutine.wrap(PIYL_fake_script)()
-local function BUIEI_fake_script() -- Clear.ClearScript 
+coroutine.wrap(MJFRZFX_fake_script)()
+local function ATSGXK_fake_script() -- Clear.ClearScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.exeframe.EditorFrame.Source.Text = ""
 	end)
 end
-coroutine.wrap(BUIEI_fake_script)()
-local function QJMOTG_fake_script() -- Attach.AttachScript 
+coroutine.wrap(ATSGXK_fake_script)()
+local function APXUA_fake_script() -- Attach.AttachScript 
 	local script = Instance.new('LocalScript', Attach)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -800,8 +794,8 @@ local function QJMOTG_fake_script() -- Attach.AttachScript
 		script.Parent.AttachScript.Disabled = true
 	end)
 end
-coroutine.wrap(QJMOTG_fake_script)()
-local function BODCF_fake_script() -- Main.drag, 
+coroutine.wrap(APXUA_fake_script)()
+local function QVRNOJM_fake_script() -- Main.drag, 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -842,8 +836,8 @@ local function BODCF_fake_script() -- Main.drag,
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(BODCF_fake_script)()
-local function NTZVUVJ_fake_script() -- Synapse.MainScript 
+coroutine.wrap(QVRNOJM_fake_script)()
+local function NSXXF_fake_script() -- Synapse.MainScript 
 	local script = Instance.new('LocalScript', Synapse)
 
 	local bar = script.Parent.StartupFrame.LoadingBar
@@ -896,4 +890,4 @@ local function NTZVUVJ_fake_script() -- Synapse.MainScript
 	wait(2)
 	script.Parent.Main:TweenPosition(UDim2.new(0.246, 0,0.259, 0),"Out","Linear",1.2,false,nil)
 end
-coroutine.wrap(NTZVUVJ_fake_script)()
+coroutine.wrap(NSXXF_fake_script)()
